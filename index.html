@@ -964,7 +964,6 @@
         </div>
 
 
-
       </div>
       <div class="faq-img">
         <img src="img/f1.svg" alt="">
@@ -982,7 +981,7 @@
 
     <section class="company">
       <h2 class="title title-pl company__title">
-        НАШИ УСЛУГИ
+        ПОДРАЗДЕЛЕНИЯ КОМПАНИИ
       </h2>
       <div class="company-item">
         <div class="company-item__img">
@@ -1256,71 +1255,6 @@
       </div>
     </section>
 
-    <section class="modal modal-one-click">
-      <div class="modal__wrapper modal-one-click__wrapper">
-        <a href="#" class="modal__exit">
-          <img src="img/mex.svg" alt="" class="modal-one-click__exit">
-        </a>
-        <h3 class="modal__title modal-one-click__title">
-          Купить в 1 клик
-        </h3>
-
-        <div class="modal-one-click__item">
-          <div class="row">
-
-            <div class="col-4">
-              <div class="modal-one-click__img">
-                <img src="img/ic1.jpg" alt="">
-              </div>
-            </div>
-
-            <div class="col-8">
-              <a href="#" class="modal-one-click__name">
-                Семга свежемороженая
-                Премиум чилийская
-              </a>
-              <div class="row">
-
-
-                <div class="col-12">
-
-                  <p class="modal-one-click__price">
-                    1050 ₽
-                  </p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-
-        <div class="modal-form">
-          <form action="POST">
-            <div class="modal-form__wrapper">
-
-              <span>
-                <input type="tel" class="form-control form__input" placeholder="Ваш телефон">
-              </span>
-              <div class="modal-form__agreement">
-                Я согласен условиями предоставления
-                услуг и обработкой моих персональных
-                данных при нажатии “Заказать звонок”
-              </div>
-              <span>
-                <button type="submit" class="btn modal-form__btn">КУПИТЬ</button>
-              </span>
-            </div>
-
-            <input type="hidden" id="js-modal-one-click-name" value="">
-            <input type="hidden" id="js-modal-one-click-price" value="">
-            <input type="hidden" id="js-modal-one-click-url" value="">
-
-          </form>
-        </div>
-      </div>
-    </section>
-
     <section class="modal modal-subscribe">
       <div class="modal__wrapper modal-subscribe__wrapper">
         <a href="#" class="modal__exit">
@@ -1354,66 +1288,20 @@
       </div>
     </section>
 
-    <section class="modal modal-job">
-      <div class="modal__wrapper modal-job__wrapper">
+    <section class="modal modal-delivery">
+      <div class="modal__wrapper modal-delivery__wrapper">
         <a href="#" class="modal__exit">
-          <img src="img/mex.svg" alt="" class="modal-job__exit">
+          <img src="img/mex.svg" alt="" class="modal-delivery__exit">
         </a>
         <h3 class="modal__title">
-          Откликнутся на вакансию
+          Расчёт доставки <br>
+          из Китая в Россию
         </h3>
         <div class="modal-form">
           <form action="POST">
             <div class="modal-form__wrapper">
               <span>
-                <input type="text" class="form-control form__input" placeholder="Имя">
-              </span>
-              <span>
-                <input type="tel" class="form-control form__input" placeholder="Телефон">
-              </span>
-
-              <span>
-                <textarea name="your-resume-2" class="form-control form__input form__textarea-long" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
-              </span>
-
-              <span>
-                <label for="your-resume" class="form__upload p-4">Загрузить резюме</label>
-                <input type="file" class="form-control d-none" id="your-resume">
-              </span>
-
-              <span>
-                <button type="submit" class="btn modal-form__btn">ОТПРАВИТЬ РЕЗЮМЕ</button>
-              </span>
-            </div>
-            <div class="modal-form__agreement">
-              Я согласен условиями предоставления
-              услуг и обработкой моих персональных
-              данных при нажатии “Отправить”
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <section class="modal modal-personal">
-      <div class="modal__wrapper modal-personal__wrapper">
-        <a href="#" class="modal__exit">
-          <img src="img/mex.svg" alt="" class="modal-personal__exit">
-        </a>
-        <h3 class="modal__title">
-          Персональные данные
-        </h3>
-        <div class="modal-form">
-          <form action="POST">
-            <div class="modal-form__wrapper">
-              <span>
-                <input type="text" class="form-control form__input" placeholder="Имя">
-              </span>
-              <span>
-                <input type="text" class="form-control form__input" placeholder="Фамилия">
-              </span>
-              <span>
-                <input type="text" class="form-control form__input" placeholder="Отчество">
+                <input type="text" class="form-control form__input" placeholder="Ваше Ф.И.О">
               </span>
               <span>
                 <input type="tel" class="form-control form__input" placeholder="Телефон">
@@ -1422,44 +1310,17 @@
                 <input type="email" class="form-control form__input" placeholder="Email">
               </span>
               <span>
-                <input type="text" class="form-control form__input" placeholder="Адрес">
+                <textarea name="your-quest" cols="30" rows="10" class="form-control form__input form__textarea" placeholder="Текст запроса"></textarea>
+              </span>
+              <span>
+                <button type="submit" class="btn btn-border-red modal-form__btn">РАСЧИТАТЬ</button>
               </span>
 
-
-              <div class="modal-form__btns">
-                <button type="submit" class="btn modal-form__btn">ИЗМЕНИТЬ</button>
-                <button type="reset" class="btn btn-white modal-form__btn modal-personal__exit">Отмена
-                </button>
+              <div class="modal-form__agreement">
+                Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с
+                политикой конфиденциальности
               </div>
 
-            </div>
-
-          </form>
-        </div>
-      </div>
-    </section>
-    <section class="modal modal-reset-pass">
-      <div class="modal__wrapper modal-personal__wrapper">
-        <a href="#" class="modal__exit">
-          <img src="img/mex.svg" alt="" class="modal-reset-pass__exit">
-        </a>
-        <h3 class="modal__title">
-          Восстановление пароля
-        </h3>
-        <div class="modal-form">
-          <form action="POST">
-            <div class="modal-form__wrapper">
-              <span>
-                <label for="your-reset-pass">Если вы забыли пароль, введите E-Mail. Ссылка для смены пароля будет выслана вам по E-Mail.</label>
-              </span>
-              <span>
-                <input id="your-reset-pass" type="email" class="form-control form__input" placeholder="Email">
-              </span>
-
-
-              <span>
-                <button type="submit" class="form-control modal-form__btn btn">ВОСТАНОВИТЬ ПАРОЛЬ</button>
-              </span>
 
             </div>
 
@@ -1468,197 +1329,6 @@
       </div>
     </section>
 
-    <section class="modal modal-basket">
-      <div class="modal__wrapper modal-basket__wrapper">
-        <a href="#" class="modal__exit">
-          <img src="img/mex.svg" alt="" class="modal-basket__exit">
-        </a>
-        <h3 class="modal__title">
-          В корзине 3 товара
-        </h3>
-        <div class="modal-form">
-          <form action="POST">
-            <div class="modal-form__wrapper">
-              <div class="modal-one-click__item">
-                <div class="row">
-
-                  <div class="col-4">
-                    <div class="modal-one-click__img">
-                      <img src="img/ic1.jpg" alt="">
-                    </div>
-                  </div>
-
-                  <div class="col-8">
-                    <a href="#" class="modal-one-click__name">
-                      Семга свежемороженая
-                      Премиум чилийская
-                    </a>
-                    <div class="row">
-
-
-                      <div class="col-5">
-                        <div class="modal-one-click__text">
-                          Цена
-                        </div>
-                      </div>
-
-                      <div class="col-7">
-
-                        <p class="modal-one-click__price">
-                          1050 ₽
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="modal-one-click__item">
-                <div class="row">
-
-                  <div class="col-4">
-                    <div class="modal-one-click__img">
-                      <img src="img/ic1.jpg" alt="">
-                    </div>
-                  </div>
-
-                  <div class="col-8">
-                    <a href="#" class="modal-one-click__name">
-                      Семга свежемороженая
-                      Премиум чилийская
-                    </a>
-                    <div class="row">
-
-
-                      <div class="col-5">
-                        <div class="modal-one-click__text">
-                          Цена
-                        </div>
-                      </div>
-
-                      <div class="col-7">
-
-                        <p class="modal-one-click__price">
-                          1050 ₽
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="modal-one-click__item">
-                <div class="row">
-
-                  <div class="col-4">
-                    <div class="modal-one-click__img">
-                      <img src="img/ic1.jpg" alt="">
-                    </div>
-                  </div>
-
-                  <div class="col-8">
-                    <a href="#" class="modal-one-click__name">
-                      Семга свежемороженая
-                      Премиум чилийская
-                    </a>
-                    <div class="row">
-
-
-                      <div class="col-5">
-                        <div class="modal-one-click__text">
-                          Цена
-                        </div>
-                      </div>
-
-                      <div class="col-7">
-
-                        <p class="modal-one-click__price">
-                          1050 ₽
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-8">
-
-                  <div class="modal-basket__text">
-                    ИТОГО
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="modal-basket__price">
-                    3150 ₽
-                  </div>
-                </div>
-              </div>
-
-
-              <span>
-                <button type="submit" class="btn modal-form__btn">ОФОРМИТЬ ЗАКАЗ</button>
-              </span>
-
-            </div>
-
-          </form>
-        </div>
-      </div>
-    </section>
-    <section class="modal modal-reviews">
-      <div class="modal__wrapper modal-reviews__wrapper">
-        <a href="#" class="modal__exit">
-          <img src="img/mex.svg" alt="" class="modal-reviews__exit">
-        </a>
-        <h3 class="modal__title">
-          Оставить отзыв
-        </h3>
-        <div class="modal-form">
-          <form action="POST">
-            <div class="modal-form__wrapper">
-              <span>
-                <textarea name="your-reviews-2" cols="30" rows="10" class="form-control form__input form__textarea-long" placeholder="Отзыв"></textarea>
-              </span>
-              <span>
-                <input type="text" class="form-control form__input" placeholder="Имя">
-              </span>
-              <span>
-                <input type="number" placeholder="Возраст" class="form-control form__input">
-              </span>
-              <span>
-                <input type="email" placeholder="Email" class="form-control form__input">
-              </span>
-
-
-              <span>
-                <label for="your-photo" class="form__upload">Загрузить фото</label>
-                <input type="file" id="your-photo" class="form-control d-none">
-              </span>
-              <div class="modal-form__star">
-                Ваша оценка
-                <ul class="rating-star js-rating js-rating-modal">
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ul>
-                <input type="hidden" class="form-control" value="0" name="rating" id="js-rating-modal">
-              </div>
-              <span>
-                <button type="submit" class="btn modal-form__btn">ОТПРАВИТЬ</button>
-              </span>
-            </div>
-            <div class="modal-form__agreement">
-              Я согласен условиями предоставления
-              услуг и обработкой моих персональных
-              данных при нажатии “Отправить”
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
   </aside>
   <!-- !MODAL -->
   <script src="vendors~main.js"></script>
